@@ -289,7 +289,7 @@ void LiquidCrystal::writeString(char message[]) {
 	}
 }
 
-void LiquidCrystal::writeFromPgmspace(const prog_uchar message[]) {
+void LiquidCrystal::writeFromPgmspace(PGM_P message[]) {
 	char letter;
 	while (letter = pgm_read_byte(message++)) {
 		write(letter);
