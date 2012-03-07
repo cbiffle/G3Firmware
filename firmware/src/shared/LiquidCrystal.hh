@@ -89,7 +89,7 @@ public:
 
   void writeString(char message[]);
 
-  void writeFromPgmspace(PGM_P message[]);
+  void writeFromPgmspace(PGM_P message);
 
   void command(uint8_t);
 
