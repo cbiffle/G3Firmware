@@ -70,7 +70,7 @@
   #define STEPPER_COUNT           3
 #else
   // Rob G's hacked G3 motherboard supports four steppers.
-  #define STEPPER_COUNT           4
+  #define STEPPER_COUNT           5
 #endif // FOURTH_STEPPER
 
 // --- Stepper and endstop configuration ---
@@ -140,6 +140,11 @@
   #define A_DIR_PIN               Pin(PortA,5)
   // The A stepper enable pin (active low)
   #define A_ENABLE_PIN            Pin(PortA,0)
+
+  // The B stepper isn't currently used, but must be defined for this hack...
+  #define B_STEP_PIN              Pin(PortB,1)
+  #define B_DIR_PIN               Pin(PortC,0)
+  #define B_ENABLE_PIN            Pin(PortC,1)
 #endif // FOURTH_STEPPER
 
 
