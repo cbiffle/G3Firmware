@@ -92,6 +92,9 @@ flags=[
 	'-g',
 	'-Os',
 	'-w',
+    '-ffreestanding',
+    '-fshort-enums',
+    '-fpack-struct',
 	'-fno-exceptions',
 	'-ffunction-sections',
 	'-fdata-sections']
